@@ -1,6 +1,6 @@
-<h1>Spots biodiversité</h1>
 
 <div class="containt_spot_1">
+    <h2>L'impact climatique sur la biodiversité</h2>
     <p>
     Plus de 90 % de la chaleur générée dans l’atmosphère par nos émissions de gaz à effet de serre
     est absorbée par l’océan. Le réchauffement du climat est donc avant tout un réchauffement de
@@ -27,4 +27,25 @@
     </p>
     <img src="assets/img/img_biodiversité_spot_1.png" alt="#">
     <img src="assets/img/img_biodiversité_spot_2.png" alt="#">
+</div>
+<div class="containt_spot_2">
+    <h2>L'impact sonore sur la biodiversité</h2>
+    <p>
+    La pollution sonore a un impact dévastateur sur la vie marine !  
+    </p>
+    <p>
+    Les bruits excessifs causés par le trafic maritime et les travaux sous-marins perturbent la
+communication et modifient le comportement des animaux marins.
+    </p>
+    <p>
+    Des invertébrés vivants sur le fond aux grands cétacés migrateurs, la pollution sonore met en péril
+les écosystèmes marins à large échelle. Même la croissance des végétaux est altérée
+    </p>
+    <p>
+    En 2023, Pure Ocean a décidé de financer le projet BIOSSA afin de mieux comprendre les effets de
+la pollution sonore sur les migrations des cétacés entre le Brésil et le Chili, au moyen de satellites et
+drones marins.
+</p>
+<img src="assets/img/img_biodiversité_spot_sonore.png" alt="#">
+    <img src="assets/img/img_biodiversité_spot_sonore_2.png" alt="#">
 </div>
