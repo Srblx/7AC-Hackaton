@@ -1,0 +1,46 @@
+@import 'colors';
+
+header {
+  // border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    // border: 1px solid green;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 1.2rem;
+
+    li {
+      text-transform: uppercase;
+      
+      a {
+        text-decoration: none;
+        color: $main-3;
+
+        &:hover {
+          color: $main-1;
+        }
+      }
+    }
+  }
+}
+
+.logo,
+.login {
+  margin: 0 5rem;
+}
+
+.logo {
+  width: 15rem;
+}
+
+
+.login {
+  width: 42px;
+  height: 42px;
+}
