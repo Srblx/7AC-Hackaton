@@ -1,5 +1,4 @@
-<img src="assets/img/carte-monde-couleur.jpg" alt="">
-
+<iframe src="https://www.konectis.com/embed/d2841f6711ec12b24e035ad71c7e1755" width="1700" height="800" frameborder="0"></iframe>
    <style>
     .modal {
   display: none; /* Masquer la modal par défaut */
