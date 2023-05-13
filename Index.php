@@ -22,7 +22,7 @@
     require_once 'Utils/header.php';
     
     //* Tableau des contrôleurs disponibles
-    $controllers = ["home", "equipages", "evenement", "pure_ocean", "spots_bio"];
+    $controllers = ["home", "equipages", "evenement", "pure_ocean", "spots"];
  
 
     //* Nom du contrôleur par défaut
@@ -56,8 +56,8 @@
         exit(trigger_error("Error 404 : not found", E_USER_ERROR));
     }
 
-    // echo "<b id='controller'>" . "Controller : " . $_GET['controller'] . "<br>" . "<b>";
-    // echo "<b id='action'>" . "action : " . $_GET['action'] . "<br>" . "<body>";
+    echo "<b id='controller'>" . "Controller : " . $_GET['controller'] . "<br>" . "<b>";
+    echo "<b id='action'>" . "action : " . $_GET['action'] . "<br>" . "<body>";
     //* Inclure le fichier de pied de page
     require_once 'Utils/footer.php';
     ?>
