@@ -1,4 +1,4 @@
-
+<img src="assets/img/banc_de_poissons.png" alt="#">
 <div class="containt_spot_1">
     <h2>L'impact climatique sur la biodiversité</h2>
     <p>
