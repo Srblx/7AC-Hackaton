@@ -11,7 +11,9 @@ class Controller_home extends Controller
 	//* L'action "home" affiche la vue "home"
 	public function action_home()
 	{
-		$this->render("home");
+		$m = Model::get_model();
+		$data = ["donnees" => $m->get_donnees()];
+		$this->render("home", $data);
 	}
 
 

@@ -6,34 +6,41 @@
 <div id="modal" class="modal">
     <div class="modal-content">
     <span class="close">&times;</span>
+    <h2>Spot biodiversité</h2>
     <div class="img_balise_donnee_recuperer">
-        <!-- Voir pour un affichage en space beetween ?  -->
-        <p><ul>
-            <li>
-                Temperature de l'eau : DONNEE
-            </li>
-            <li>
-                Salinité de l'eau : DONNEE
-            </li>
-            <li>
-                Chlorophill "A" : DONNEE
-            </li>
-            <li>
-                Oxygène dissous : DONNEE
-            </li>
-            <li>
-                Date/Heure : DONNEE
-            </li>
-            <li>
-                Longitude : DONNEE
-            </li>
-            <li>
-                Latitude : DONNEE
-            </li>
-        </ul> 
+    <!-- <form action="?controller=home&action=donnees_date" id="form_choix_date">
+    <select name="date_donnee" id="date_donnee">
+        <option value="date">Choisir une date</option>
+        <?php foreach ($donnees as $d) : ?>
+            <option value="<?= $d->tracked_at ?>"><?= $d->tracked_at ?></option>
+        <?php endforeach ;
+        var_dump($donnees);
+        ?>
+    </select>
+    <input type="submit" id="submit_date_donnees" >
+</form> -->
+<p>
+<?php // if ($position == 1) : ?>   
+    <ul>
+    <?php foreach ($donnees as $dd) : ?>
+        <li>Temperature de l'eau : <?= $dd->temperature ?></li>
+        <li>Salinité de l'eau : <?= $dd->salinity ?></li>
+        <li>Chlorophill "A" : <?= $dd->chlorophill ?></li>
+        <li>Oxygène dissous : <?= $dd->oxygen ?></li>
+        <li>Date/Heure : <?= $dd->longitude ?></li>
+        <br>
+        <li>Longitude : <?= $dd->latitude ?></li>
+        <li>Latitude : <?= $dd->tracked_at ?></li>
+    <?php  endforeach; ?>
+    </ul> 
+<?php // endif ?>
     </p>
-    <img src="assets/img/balise_collecte_donnee.jpg" alt="">
+    <div class="link_savoir_plus_spot">
+        <img src="assets/img/balise_collecte_donnee.jpg" alt="">
+        <a href="?controller=spots&action=spots_bio" class="link_spot">En savoir plus sur le spot.</a>
+    </div>
 </div>
+
     <p>
         Température de l'eau : La température de l'eau joue un rôle crucial dans la distribution des espèces marines. Différentes espèces ont des préférences thermiques spécifiques et leur présence peut être influencée par la température de l'eau. Une température de 17°C indique donc les conditions thermiques dans cet environnement marin particulier. 
     </p>
@@ -50,6 +57,7 @@
     </p>
   </div>
 </div>
+
 <a href="#" id="info-link2"><i class="fa-solid fa-location-dot localtion2"></i></a>
 <!-- spot biodiversité 2  -->
 <div id="modal2" class="modal">
