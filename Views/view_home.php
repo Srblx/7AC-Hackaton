@@ -20,9 +20,9 @@
     <input type="submit" id="submit_date_donnees" >
 </form>
 <p>
-<?php if ($position == 1) : ?>   
-    <ul id="donnees_list">
-    <?php foreach ($donnees as $dd) : ?>
+<?php //if ($position == 1) : ?>   
+    <!-- <ul id="donnees_list">
+    <?php //foreach ($donnees as $dd) : ?>
         <li>Temperature de l'eau : <?= $dd->temperature ?></li>
         <li>Salinité de l'eau : <?= $dd->salinity ?></li>
         <li>Chlorophill "A" : <?= $dd->chlorophill ?></li>
@@ -31,9 +31,9 @@
         <li>Latitude : <?= $dd->longitude ?></li>
         <li>Date/Heure : <?=  $dd->tracked_at ?></li>
         <br>
-    <?php  endforeach; ?>
-    </ul> 
-<?php endif ?>
+    <?php  //endforeach; ?>
+    </ul>  -->
+<?php //endif ?>
     </p>
     <div class="link_savoir_plus_spot">
         <img src="assets/img/balise_collecte_donnee.jpg" alt="">
@@ -108,44 +108,44 @@
   </div>
 </div>
 <script>
-    // const form = document.getElementById('form_choix_date');
-    // const donneesList = document.getElementById('donnees_list');
+    const form = document.getElementById('form_choix_date');
+    const donneesList = document.getElementById('donnees_list');
 
-    // form.addEventListener('submit', function(event) {
-    //     event.preventDefault(); // Empêche le comportement par défaut du formulaire
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêche le comportement par défaut du formulaire
 
-    //     const date = document.getElementById('date_donnee').value;
+        const date = document.getElementById('date_donnee').value;
 
-    //     // Envoie de la requête AJAX
-    //     const xhr = new XMLHttpRequest();
-    //     xhr.open('POST', '?controller=home&action=donnees_date');
-    //     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    //     xhr.onload = function() {
-    //         if (xhr.status === 200) {
-    //             const response = JSON.parse(xhr.responseText);
-    //             afficherDonnees(response);
-    //         }
-    //     };
-    //     xhr.send('date_donnee=' + encodeURIComponent(date));
-    // });
+        // Envoie de la requête AJAX
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', '?controller=home&action=home');
+        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                const response = JSON.parse(xhr.responseText);
+                afficherDonnees(response);
+            }
+        };
+        xhr.send('submit_date_donnees=1&date_donnee=' + encodeURIComponent(date));
+    });
 
-    // // Fonction pour afficher les données sur la page
-    // function afficherDonnees(data) {
-    //     donneesList.innerHTML = ''; // Efface le contenu précédent
-    //     data.forEach(function(dd) {
-    //         const li = document.createElement('li');
-    //         li.innerHTML = `
-    //             <ul>
-    //                 <li>Temperature de l'eau : ${dd.temperature}</li>
-    //                 <li>Salinité de l'eau : ${dd.salinity}</li>
-    //                 <li>Chlorophill "A" : ${dd.chlorophill}</li>
-    //                 <li>Oxygène dissous : ${dd.oxygen}</li>
-    //                 <li>Date/Heure : ${dd.tracked_at}</li>
-    //                 <li>Longitude : ${dd.longitude}</li>
-    //                 <li>Latitude : ${dd.latitude}</li>
-    //             </ul>
-    //         `;
-    //         donneesList.appendChild(li);
-    //     });
-    // }
+    // Fonction pour afficher les données sur la page
+    function afficherDonnees(data) {
+        donneesList.innerHTML = ''; // Efface le contenu précédent
+        data.forEach(function(dd) {
+            const li = document.createElement('li');
+            li.innerHTML = `
+                <ul>
+                    <li>Temperature de l'eau : ${dd.temperature}</li>
+                    <li>Salinité de l'eau : ${dd.salinity}</li>
+                    <li>Chlorophill "A" : ${dd.chlorophill}</li>
+                    <li>Oxygène dissous : ${dd.oxygen}</li>
+                    <li>Date/Heure : ${dd.tracked_at}</li>
+                    <li>Longitude : ${dd.longitude}</li>
+                    <li>Latitude : ${dd.latitude}</li>
+                </ul>
+            `;
+            donneesList.appendChild(li);
+        });
+    }
 </script>
