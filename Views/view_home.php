@@ -1,10 +1,10 @@
-<iframe src="https://www.konectis.com/embed/d2841f6711ec12b24e035ad71c7e1755" width="1700" height="800" frameborder="0"></iframe>
+<iframe src="https://www.konectis.com/embed/d2841f6711ec12b24e035ad71c7e1755" width="100%" height="800" frameborder="0"></iframe>
 
 
 <a href="#" id="info-link"><i class="fa-solid fa-location-dot location1"></i></a>
 <!-- Modal spot bideversite 1  -->
 <div id="modal" class="modal">
-  <div class="modal-content">
+    <div class="modal-content">
     <span class="close">&times;</span>
     <div class="img_balise_donnee_recuperer">
         <!-- Voir pour un affichage en space beetween ?  -->
