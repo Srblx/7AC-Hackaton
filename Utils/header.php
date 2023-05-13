@@ -11,7 +11,7 @@
             <a href="?controller=evenement&action=evenement">evenement</a>
         </li>
         <li>
-            <a href="?controller=spots&action=spots">spots</a>
+            <a href="?controller=spots&action=spots_bio">Spots Biodiversité</a>
         </li>
     </ul>
 </header>

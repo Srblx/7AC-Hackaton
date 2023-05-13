@@ -1,6 +1,6 @@
 <?php
 
-class Controller_home extends Controller
+class Controller_equipages extends Controller
 {
 	//* L'action par défaut redirige vers l'action "home"
 	public function action_default()

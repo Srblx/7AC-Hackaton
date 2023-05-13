@@ -9,7 +9,7 @@ class Controller_spots extends Controller
 	}
 
 	//* L'action "home" affiche la vue "home"
-	public function action_spots()
+	public function action_spots_bio()
 	{
 		$this->render("spots_bio");
 	}
