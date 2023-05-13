@@ -40,7 +40,7 @@ class Model
     public function get_donnees()
     {
          // Préparer la requête SQL pour sélectionner toute les donnéesdans 
-         $r = $this->bd->prepare("SELECT * FROM hydrolical_data;");
+         $r = $this->bd->prepare("SELECT tracked_at FROM hydrolical_data");
 
          // Exécuter la requête
          $r->execute();
@@ -52,7 +52,7 @@ class Model
     public function get_donnees_by_date($date_donnee)
     {
         // Préparer la requête SQL pour sélectionner les données pour la date donnée
-        $r = $this->bd->prepare("SELECT * FROM hydrolical_data ");
+        $r = $this->bd->prepare("SELECT * FROM hydrolical_data WHERE tracked_at = :date ");
         $r->bindValue(':date', $date_donnee);
 
         // Exécuter la requête

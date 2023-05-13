@@ -49,10 +49,6 @@ nav{
 padding-top: 4em;
 }
 
-@media screen and screen (max-width:450px) {
-
-   
-}
 </style>
  <footer>
         <div class="div1"><img src="assets/img/logo_blanc.png" alt="logo pure ocean" class="logo_footer" style="width:85%;"></div>

@@ -1,42 +1,58 @@
 <iframe src="https://www.konectis.com/embed/d2841f6711ec12b24e035ad71c7e1755" width="1700" height="800" frameborder="0"></iframe>
 
 
-<a href="#" id="info-link"><i class="fa-solid fa-location-dot location1"></i></a>
+<a  id="info-link"><i class="fa-solid fa-location-dot location1"></i></a>
 <!-- Modal spot bideversite 1  -->
 <div id="modal" class="modal">
     <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Spot biodiversité</h2>
     <div class="img_balise_donnee_recuperer">
-    <form action="?controller=home&action=home" id="form_choix_date">
-    <select name="date_donnee" id="date_donnee">
-        <option value="date">Choisir une date</option>
-        <?php foreach ($donnees as $d) : ?>
-            <option value="<?= $d->tracked_at ?>"><?= $d->tracked_at ?></option>
-        <?php endforeach ;
-        var_dump($donnees);
-        ?>
-    </select>
-    <input type="submit" id="submit_date_donnees" >
-</form>
-<p>
-<?php //if ($position == 1) : ?>   
-    <!-- <ul id="donnees_list">
-    <?php //foreach ($donnees as $dd) : ?>
-        <li>Temperature de l'eau : <?= $dd->temperature ?></li>
-        <li>Salinité de l'eau : <?= $dd->salinity ?></li>
-        <li>Chlorophill "A" : <?= $dd->chlorophill ?></li>
-        <li>Oxygène dissous : <?= $dd->oxygen ?></li>
-        <li>Longitude : <?= $dd->latitude ?></li>
-        <li>Latitude : <?= $dd->longitude ?></li>
-        <li>Date/Heure : <?=  $dd->tracked_at ?></li>
+        <form action="?controller=home&action=home" id="form_choix_date" method="POST">
+        <select name="date_donnee" id="date_donnee">
+            <option value="date">Choisir une date</option>
+            <?php foreach ($donnees as $d) : ?>
+                <option value="<?= $d->tracked_at ?>"><?= $d->tracked_at ?></option>
+            <?php endforeach ;
+            var_dump($donnees);
+            ?>
+        </select>
+        <input type="submit" id="submit_date_donnees" name="submit_date_donnees" >
+    </form>
+
+<?php if ($position == 1) : ?>   
+    <style>
+        select {
+            display: block
+        }
+    </style>
+    <table id="donnees_list">
+        <thead>
+        <th>Temperature de l'eau :</th>
+        <th>Salinité de l'eau :</th>
+        <th>Chlorophill "A" :</th>
+        <th>Oxygène dissous :</th>
+        <th>Longitude :</th>
+        <th>Latitude :</th>
+        <th>Date/Heure :</th>
+        </thead>
+    <?php foreach ($date_donnees as $dd) : ?>
+        <tbody>
+        <td class="temp"> <?= $dd->temperature ?></td>
+        <td class="sal"> <?= $dd->salinity ?></td>
+        <td class="chlo"> <?= $dd->chlorophill ?></td>
+        <td class="oxy"> <?= $dd->oxygen ?></td>
+        <td class="latitude"> <?= $dd->latitude ?></td>
+        <td class="longitude"> <?= $dd->longitude ?></td>
+        <td class="tracked_at"> <?=  $dd->tracked_at ?></td>
         <br>
-    <?php  //endforeach; ?>
-    </ul>  -->
-<?php //endif ?>
-    </p>
+        </tbody>
+    <?php  endforeach; ?>
+    </table> 
+<?php endif ?>
+    
     <div class="link_savoir_plus_spot">
-        <img src="assets/img/balise_collecte_donnee.jpg" alt="">
+        <!-- <img src="assets/img/balise_collecte_donnee.jpg" alt=""> -->
         <a href="?controller=spots&action=spots_bio" class="link_spot">En savoir plus sur le spot.</a>
     </div>
 </div>
@@ -107,45 +123,3 @@
     </p>
   </div>
 </div>
-<script>
-    const form = document.getElementById('form_choix_date');
-    const donneesList = document.getElementById('donnees_list');
-
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Empêche le comportement par défaut du formulaire
-
-        const date = document.getElementById('date_donnee').value;
-
-        // Envoie de la requête AJAX
-        const xhr = new XMLHttpRequest();
-        xhr.open('POST', '?controller=home&action=home');
-        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-        xhr.onload = function() {
-            if (xhr.status === 200) {
-                const response = JSON.parse(xhr.responseText);
-                afficherDonnees(response);
-            }
-        };
-        xhr.send('submit_date_donnees=1&date_donnee=' + encodeURIComponent(date));
-    });
-
-    // Fonction pour afficher les données sur la page
-    function afficherDonnees(data) {
-        donneesList.innerHTML = ''; // Efface le contenu précédent
-        data.forEach(function(dd) {
-            const li = document.createElement('li');
-            li.innerHTML = `
-                <ul>
-                    <li>Temperature de l'eau : ${dd.temperature}</li>
-                    <li>Salinité de l'eau : ${dd.salinity}</li>
-                    <li>Chlorophill "A" : ${dd.chlorophill}</li>
-                    <li>Oxygène dissous : ${dd.oxygen}</li>
-                    <li>Date/Heure : ${dd.tracked_at}</li>
-                    <li>Longitude : ${dd.longitude}</li>
-                    <li>Latitude : ${dd.latitude}</li>
-                </ul>
-            `;
-            donneesList.appendChild(li);
-        });
-    }
-</script>
