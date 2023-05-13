@@ -32,9 +32,12 @@ header ul {
   list-style-type: none;
   font-size: 1.2rem;
 }
+
 header ul li {
   text-transform: uppercase;
 }
+
+
 header ul li a {
   text-decoration: none;
   color: rgb(7, 21, 98);

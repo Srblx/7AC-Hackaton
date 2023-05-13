@@ -1,6 +1,7 @@
 <header>
 
 
+
     <nav class="navbar navbar-expand-lg w-100" style="background-color: rgb(252,250,250);">
         <div class="container-fluid">
             <a class="navbar-brand" href="?controller=home&action=home">
@@ -21,4 +22,3 @@
         </div>
 
     </nav>
-</header>
