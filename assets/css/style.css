@@ -1,6 +1,6 @@
 .location1:before, .location1:before {
     content: "\f3c5";
-    position: absolute;
+    position: fixed;
     top: 60vh;
     left: 59vh;
     color: red;
@@ -8,8 +8,8 @@
 
 .localtion2 {
     content: "\f3c5";
-    position: absolute;
-    top: 35vh;
+    position: fixed;
+    top: 30vh;
     right: 49vh;
     color: red;
 }
@@ -124,3 +124,22 @@ iframe {
     z-index: 999;
   }
   
+
+.link_spot {
+    background-color:  blue;
+    border: solid 2px black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10PX;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link_savoir_plus_spot {
+    display: grid;
+}
+

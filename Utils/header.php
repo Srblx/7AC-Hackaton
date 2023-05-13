@@ -1,5 +1,5 @@
 <header>
-    <img class="logo" src="assets/img/logo_horizontal.png" alt="logo">
+    <a href="?controller=home&action=home"><img class="logo" src="assets/img/logo_horizontal.png" alt="logo"></a>
     <ul>
         <li>
             <a href="?controller=equipages&action=equipages">Equipages</a>
