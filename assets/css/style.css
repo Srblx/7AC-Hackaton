@@ -125,6 +125,7 @@ iframe {
   }
   
 
+
 .link_spot {
     background-color:  blue;
     border: solid 2px black;
@@ -142,4 +143,5 @@ iframe {
 .link_savoir_plus_spot {
     display: grid;
 }
+
 
