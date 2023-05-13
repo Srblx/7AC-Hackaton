@@ -1,5 +1,8 @@
 <ul>
     <li>
+        <a href="?controller=home&action=home">Accueil</a>
+    </li>
+    <li>
         <a href="?controller=equipages&action=equipages">equipages</a>
     </li>
     <li>
