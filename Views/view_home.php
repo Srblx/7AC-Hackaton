@@ -8,7 +8,7 @@
     <span class="close">&times;</span>
     <h2>Spot biodiversité</h2>
     <div class="img_balise_donnee_recuperer">
-    <!-- <form action="?controller=home&action=donnees_date" id="form_choix_date">
+    <form action="?controller=home&action=home" id="form_choix_date">
     <select name="date_donnee" id="date_donnee">
         <option value="date">Choisir une date</option>
         <?php foreach ($donnees as $d) : ?>
@@ -18,22 +18,22 @@
         ?>
     </select>
     <input type="submit" id="submit_date_donnees" >
-</form> -->
+</form>
 <p>
-<?php // if ($position == 1) : ?>   
-    <ul>
+<?php if ($position == 1) : ?>   
+    <ul id="donnees_list">
     <?php foreach ($donnees as $dd) : ?>
         <li>Temperature de l'eau : <?= $dd->temperature ?></li>
         <li>Salinité de l'eau : <?= $dd->salinity ?></li>
         <li>Chlorophill "A" : <?= $dd->chlorophill ?></li>
         <li>Oxygène dissous : <?= $dd->oxygen ?></li>
-        <li>Date/Heure : <?= $dd->longitude ?></li>
-        <br>
         <li>Longitude : <?= $dd->latitude ?></li>
-        <li>Latitude : <?= $dd->tracked_at ?></li>
+        <li>Latitude : <?= $dd->longitude ?></li>
+        <li>Date/Heure : <?=  $dd->tracked_at ?></li>
+        <br>
     <?php  endforeach; ?>
     </ul> 
-<?php // endif ?>
+<?php endif ?>
     </p>
     <div class="link_savoir_plus_spot">
         <img src="assets/img/balise_collecte_donnee.jpg" alt="">
@@ -107,3 +107,45 @@
     </p>
   </div>
 </div>
+<script>
+    // const form = document.getElementById('form_choix_date');
+    // const donneesList = document.getElementById('donnees_list');
+
+    // form.addEventListener('submit', function(event) {
+    //     event.preventDefault(); // Empêche le comportement par défaut du formulaire
+
+    //     const date = document.getElementById('date_donnee').value;
+
+    //     // Envoie de la requête AJAX
+    //     const xhr = new XMLHttpRequest();
+    //     xhr.open('POST', '?controller=home&action=donnees_date');
+    //     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    //     xhr.onload = function() {
+    //         if (xhr.status === 200) {
+    //             const response = JSON.parse(xhr.responseText);
+    //             afficherDonnees(response);
+    //         }
+    //     };
+    //     xhr.send('date_donnee=' + encodeURIComponent(date));
+    // });
+
+    // // Fonction pour afficher les données sur la page
+    // function afficherDonnees(data) {
+    //     donneesList.innerHTML = ''; // Efface le contenu précédent
+    //     data.forEach(function(dd) {
+    //         const li = document.createElement('li');
+    //         li.innerHTML = `
+    //             <ul>
+    //                 <li>Temperature de l'eau : ${dd.temperature}</li>
+    //                 <li>Salinité de l'eau : ${dd.salinity}</li>
+    //                 <li>Chlorophill "A" : ${dd.chlorophill}</li>
+    //                 <li>Oxygène dissous : ${dd.oxygen}</li>
+    //                 <li>Date/Heure : ${dd.tracked_at}</li>
+    //                 <li>Longitude : ${dd.longitude}</li>
+    //                 <li>Latitude : ${dd.latitude}</li>
+    //             </ul>
+    //         `;
+    //         donneesList.appendChild(li);
+    //     });
+    // }
+</script>
