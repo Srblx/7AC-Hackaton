@@ -51,7 +51,7 @@
         //* Afficher une erreur 404 si le fichier n'existe pas
         exit("Error 404 : not found");
     }
-
+test
     //* Inclure le fichier de pied de page
     require_once 'Utils/footer.php';
     echo "<b id='controller'>" . "Controller : " . $_GET['controller'] . "<br>" . "<b>";
