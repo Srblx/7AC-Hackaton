@@ -1,16 +1,16 @@
 .location1:before, .location1:before {
     content: "\f3c5";
     position: fixed;
-    top: 60vh;
-    left: 59vh;
+    top: 58vh;
+    left: 69vh;
     color: red;
 }
 
 .localtion2 {
     content: "\f3c5";
     position: fixed;
-    top: 30vh;
-    right: 49vh;
+    top: 42vh;
+    right: 62vh;
     color: red;
 }
 
@@ -154,7 +154,7 @@ iframe {
     margin-bottom: 10px;
     width: 100%;
     border-collapse: collapse;
-    border: black;
+    
   }
   
   #donnees_list th,
@@ -197,6 +197,7 @@ iframe {
     padding: 10px;
     border-radius: 10px;
     background-color: #aaa;
+    font-weight: bold;
   }
 
   #date_donnee:focus{
@@ -205,20 +206,30 @@ iframe {
 
 .temp {
     background-color: rgb(49, 209, 49);
+    font-weight: bold;
 }
 .sal {
     background-color:rgb(49, 209, 49);
+    font-weight: bold;
 }
 .chlo {
     background-color: orange;
+    font-weight: bold;
 }
 .oxy {
-    background-color:rgb(49, 209, 49);
+    background-color: orange;
+    /* background-color:rgb(49, 209, 49); */
+    font-weight: bold;
 
 }
-.latitude {
-    background-color: #007bff;
+
+.longitude, .latitude, .tracked_at {
+    background-color: #007bffa3;
+    color: white;
+    font-weight: bold;
 }
-.longitude {
-    background-color: #007bff;
+
+.titre_span {
+    font-size: 18px;
+    font-weight: bold;
 }

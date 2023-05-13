@@ -58,17 +58,17 @@
 </div>
 
     <p>
-        Température de l'eau : La température de l'eau joue un rôle crucial dans la distribution des espèces marines. Différentes espèces ont des préférences thermiques spécifiques et leur présence peut être influencée par la température de l'eau. Une température de 17°C indique donc les conditions thermiques dans cet environnement marin particulier. 
+       <span class="titre_span">  Température de l'eau :</span> La température de l'eau joue un rôle crucial dans la distribution des espèces marines. Différentes espèces ont des préférences thermiques spécifiques et leur présence peut être influencée par la température de l'eau. Une température de 17°C indique donc les conditions thermiques dans cet environnement marin particulier. 
     </p>
     <p>
-    Salinité de l'eau : La salinité de l'eau, exprimée en grammes de sel par litre (g/L), est un autre paramètre important qui influence la biodiversité marine. Certains organismes marins ont une tolérance spécifique à la salinité et ne se trouvent que dans des plages de salinité particulières. La salinité moyenne dans les oceans est de 34.7g/L
+    <span class="titre_span"> Salinité de l'eau :</span> La salinité de l'eau, exprimée en grammes de sel par litre (g/L), est un autre paramètre important qui influence la biodiversité marine. Certains organismes marins ont une tolérance spécifique à la salinité et ne se trouvent que dans des plages de salinité particulières. La salinité moyenne dans les oceans est de 34.7g/L
     </p>
     <p>
-    Chlorophylle "A" : La chlorophylle "A" est un pigment présent dans les plantes et les algues, et sa concentration dans l'eau est souvent utilisée comme indicateur de la biomasse algale. 
+    <span class="titre_span"> Chlorophylle "A" :</span> La chlorophylle "A" est un pigment présent dans les plantes et les algues, et sa concentration dans l'eau est souvent utilisée comme indicateur de la biomasse algale. 
     </p>
-    <img src="assets/img/explication_donnee.png" alt="" style="width:50%;">
+    <img src="assets/img/explication_donnee.png" alt="" style="width:50%;margin:0 auto;margin-bottom:15px">
     <p>
-    Oxygène dissous : L'oxygène dissous est essentiel à la vie marine et sa concentration dans l'eau est un facteur clé pour évaluer la santé de l'écosystème. Les organismes marins dépendent de l'oxygène dissous pour leur métabolisme et leur survie. 
+    <span class="titre_span"> Oxygène dissous :</span> L'oxygène dissous est essentiel à la vie marine et sa concentration dans l'eau est un facteur clé pour évaluer la santé de l'écosystème. Les organismes marins dépendent de l'oxygène dissous pour leur métabolisme et leur survie. 
     En temps normal, la quantité d'oxygène dissous dans les eaux océaniques est comprise entre 7 et 8 milligrammes par millilitre.
     </p>
   </div>
