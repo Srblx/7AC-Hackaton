@@ -2,7 +2,7 @@
     .heading {
             width: calc(100% - 2vw);
             height: 30vh;
-            background-image: url(../assets/img/banc_de_sable.jpg);
+            background-image: url(assets/img/banc_de_sable.jpg);
             background-size: cover;
             display: flex;
             align-items: center;
