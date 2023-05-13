@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+<h1>trait_exists</h1>
+<p>hello </p>
+<iframe src="https://www.konectis.com/embed/d2841f6711ec12b24e035ad71c7e1755" width="1700" height="800" frameborder="0"></iframe>
+=======
 <iframe src="https://www.konectis.com/embed/d2841f6711ec12b24e035ad71c7e1755" width="100%" height="800" frameborder="0"></iframe>
+>>>>>>> 7a8d6803fc78ca334027061533b3eec017b7b41b
 
 
 <a href="#" id="info-link"><i class="fa-solid fa-location-dot location1"></i></a>
