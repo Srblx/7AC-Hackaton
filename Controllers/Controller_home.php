@@ -14,8 +14,5 @@ class Controller_home extends Controller
 		$this->render("home");
 	}
 
-	public function action_about()
-    {
-        $this->render("about");
-    }
+
 }
