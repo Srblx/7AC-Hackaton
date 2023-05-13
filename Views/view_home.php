@@ -79,7 +79,7 @@
     <p>
     Chlorophylle "A" : La chlorophylle "A" est un pigment présent dans les plantes et les algues, et sa concentration dans l'eau est souvent utilisée comme indicateur de la biomasse algale. 
     </p>
-    <img src="assets/img/explication_donnee.png" alt="">
+    <img src="assets/img/explication_donnee.png" alt="" style="width:50%;">
     <p>
     Oxygène dissous : L'oxygène dissous est essentiel à la vie marine et sa concentration dans l'eau est un facteur clé pour évaluer la santé de l'écosystème. Les organismes marins dépendent de l'oxygène dissous pour leur métabolisme et leur survie. 
     En temps normal, la quantité d'oxygène dissous dans les eaux océaniques est comprise entre 7 et 8 milligrammes par millilitre.
