@@ -1,7 +1,6 @@
 <h1>Les Bermudes - Lorient.</h1>
 
 <div class="containt_event">
-    <h2>Voir pour affiche la carte recuperé par Flo</h2>
     <p>
     Ce qui attend les participants : Un trajet d'environ 3 000 miles difficile à négocier et riche en phénomènes majestueux : grands courants, dépressions extra-tropicales,
 richesse de la faune marine, et parfois même, icebergs !
