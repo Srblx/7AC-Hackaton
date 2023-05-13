@@ -17,7 +17,7 @@
     require_once 'Controllers/Controller.php';
     require_once 'Models/Model.php';
     require_once 'Utils/header.php';
-    
+
     //* Tableau des contrôleurs disponibles
     $controllers = ["home", "equipages", "evenement", "pure_ocean", "spots"];
 
@@ -58,4 +58,8 @@
     require_once 'Utils/footer.php';
     ?>
 </body>
+
+<script src="assets/js/app.js"></script>
+
+
 </html>
