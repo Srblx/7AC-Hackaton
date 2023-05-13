@@ -50,9 +50,8 @@
   }
 
   .img_balise_donnee_recuperer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: content;
+
     margin: 20px;
   }
 
@@ -144,4 +143,82 @@ iframe {
     display: grid;
 }
 
+/* Style du select */
+#date_donnee {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style du tableau */
+  #donnees_list {
+    margin-bottom: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    border: black;
+  }
+  
+  #donnees_list th,
+  #donnees_list td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  #donnees_list th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style du lien */
+  .link_savoir_plus_spot {
+    text-align: center;
+  }
+  
+  .link_savoir_plus_spot a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .link_savoir_plus_spot a:hover {
+    background-color: #0056b3;
+  }
 
+  #submit_date_donnees {
+    padding: 10px;
+    background-color: #007bff;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+  }
+
+  #date_donnee {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #aaa;
+  }
+
+  #date_donnee:focus{
+    border: 2px solid #007bff;
+  }
+
+.temp {
+    background-color: rgb(49, 209, 49);
+}
+.sal {
+    background-color:rgb(49, 209, 49);
+}
+.chlo {
+    background-color: orange;
+}
+.oxy {
+    background-color:rgb(49, 209, 49);
+
+}
+.latitude {
+    background-color: #007bff;
+}
+.longitude {
+    background-color: #007bff;
+}
