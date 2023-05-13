@@ -36,5 +36,5 @@ avec leurs routeurs ou non de choisir leur parcours.
 </div>
 <div class="img_evement">
 <img src="assets/img/coraux.png" alt="">
-<img src="assets/img/raie.png" alt="">
+<img src="assets/img/raie.jpg" alt="">
 </div>
