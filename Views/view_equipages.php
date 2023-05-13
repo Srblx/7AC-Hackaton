@@ -2,7 +2,7 @@
     .heading {
             width: calc(100% - 2vw);
             height: 30vh;
-            background-image: url(../assets/img/banc_de_sable.jpg);
+            background-image: url(assets/img/banc_de_sable.jpg);
             background-size: cover;
             display: flex;
             align-items: center;
@@ -12,8 +12,7 @@
         .heading h1 {
             color: #fff;
             font-size: 5rem;
-    
-            text-shadow: 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000;
+            text-shadow: 2px 0 0 #071562, 2px 2px 0 #071562, 0 2px 0 #071562, -2px 2px 0 #071562, -2px 0 0 #071562, -2px -2px 0 #071562, 0 -2px 0 #071562, 2px -2px 0 #071562;
         }
     
         .equipage {

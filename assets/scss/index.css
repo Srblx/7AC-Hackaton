@@ -37,10 +37,10 @@ header ul li {
 }
 header ul li a {
   text-decoration: none;
-  color: rgb(7, 21, 98);
+  color: #071562;
 }
 header ul li a:hover {
-  color: rgb(0, 121, 213);
+  color: #0079d5;
 }
 
 .logo,
