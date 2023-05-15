@@ -21,14 +21,14 @@
         <div class="card">
             <img src="assets/img/img_biodiversité_spot_2.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">L'impact sonore sur la biodiversité</h5>
+                <!-- <h5 class="card-title">L'impact sonore sur la biodiversité</h5>
                 <p class="card-text">Les bruits excessifs causés par le trafic maritime et les travaux sous-marins perturbent la
                     communication et modifient le comportement des animaux marins.
                     Des invertébrés vivants sur le fond aux grands cétacés migrateurs, la pollution sonore met en péril
                     les écosystèmes marins à large échelle. Même la croissance des végétaux est altérée</p>
                 <p class="card-text"><small class="text-body-secondary">En 2023, Pure Ocean a décidé de financer le projet BIOSSA afin de mieux comprendre les effets de
                         la pollution sonore sur les migrations des cétacés entre le Brésil et le Chili, au moyen de satellites et
-                        drones marins.</small></p>
+                        drones marins.</small></p> -->
             </div>
         </div>
         <div class="card">

@@ -9,8 +9,8 @@
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/coraux.png" class="d-block w-100" alt="...">
-                    <h4>Ce qui attend les participants</h4>
+                    <img src="assets/img/img_equipage_2.png" class="d-block w-100" alt="...">
+                    <h4>Evenement en cours : Race Pure Ocean</h4>
                     <p>
                         Un trajet d'environ 3 000 miles difficile à négocier et riche en phénomènes majestueux : grands courants, dépressions extra-tropicales,
                         richesse de la faune marine, et parfois même, icebergs !
@@ -23,11 +23,13 @@
                         l'océan et donner les moyens au plus grand nombre de contribuer à sa sauvegarde.
                     </p>
                     <p>
-                        À cet effet, une cagnotte vient d'être mise en ligne : https://lnkd.in/dfdjicgd
+                        À cet effet, une cagnotte vient d'être mise en ligne : 
+                        <br>
+                        <button type="button" href="https://lnkd.in/dfdjicgd" class="btn btn-primary btn-lg btn-block">DON</button>
                     </p>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/raie.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/img_equipage_5.png" class="d-block w-100" alt="...">
                     <h4>Plus d’informations sur le parcours</h4>
                     <p>
                         Saint George’s – Lorient : environ 2880 milles nautiques Les participants n’auront pas à respecter de portes de glaces et seront libres, sous leur propre responsabilité,
